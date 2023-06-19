@@ -1,0 +1,26 @@
+﻿@model CQRSProject.CQRS.Results.GetProductByIdQueryResult
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Ürün Adı</th>
+            <th>Ürün İçeriği</th>
+            <th>Ürün Resmi</th>
+            <th>Ürün Fiyatı</th>
+        </tr>
+            <tr>
+                <th>@Model.ProductID</th>
+            <td>@Model.ProductName</td>
+            <td>@Model.ProductDescription</td>
+            <td>@Model.ProductImage</td>
+            <td>@Model.ProductPrice</td>
+            </tr>
+
+    </table>
+    <br />
+</div>

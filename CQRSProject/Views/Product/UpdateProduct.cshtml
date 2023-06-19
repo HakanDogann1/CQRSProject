@@ -1,0 +1,24 @@
+﻿@model CQRSProject.CQRS.Results.GetProductUpdateByIdQueryResult
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <form method="post">
+        <input type="hidden" asp-for="ProductID"/>
+        <label>Ürün Adı</label>
+        <input type="text" class="form-control" asp-for="ProductName"/>
+        <br />
+        <label>Ürün İçeriği</label>
+        <input type="text" class="form-control" asp-for="ProductDescription" />
+        <br />
+        <label>Ürün Resmi</label>
+        <input type="text" class="form-control" asp-for="ProductImage" />
+        <br />
+         <label>Ürün Adı</label>
+        <input type="number" class="form-control" asp-for="ProductPrice"/>
+        <br />
+        <button class="btn btn-outline-dark">Kaydet</button>
+    </form>
+</div>
